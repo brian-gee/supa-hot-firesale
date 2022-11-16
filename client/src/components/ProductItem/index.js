@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import firegif from "./../../assets/fire.gif"
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -46,8 +47,11 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <p><span><img alt="logo" className="gif"src={firegif}></img></span> {name} <span><img alt="logo" className="gif"src={firegif}></img></span></p>  
+        
       </Link>
+      
+
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <span>${price}</span>
