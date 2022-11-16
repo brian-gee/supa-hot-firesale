@@ -30,7 +30,7 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/login" onClick={TOGGLE_MODAL}>
+            <Link to="/login">
               Login
             </Link>
           </li>
