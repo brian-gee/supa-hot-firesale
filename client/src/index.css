@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #59453E;
+  --secondary: #f2d680;
+  --tertiary: #F20505;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -77,6 +77,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  /* color: var(--secondary); */
 }
 
 header {
