@@ -145,6 +145,7 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .space-between {
