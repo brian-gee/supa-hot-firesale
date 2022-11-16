@@ -1,28 +1,17 @@
 import React, { useState} from "react";
+import Home from "../../../pages/Home";
+
 import Login from "../../../pages/Login";
 import Signup from "../../../pages/Signup";
 import "./Modal.css";
 
 export default function ModalSignUp() {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
+  document.body.classList.add('active-modal')
 
   return (
     <>
-      <button onClick={toggleModal} className="btn-modal">
-        Open
-      </button>
-
-      {modal && (
+      <Home />
+      {true && (
         <div className="modal">
           <div  className="overlay"></div>
           <div className="modal-content">

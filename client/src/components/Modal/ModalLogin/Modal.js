@@ -1,38 +1,30 @@
 import React, { useState } from "react";
+import Home from "../../../pages/Home";
 import Login from "../../../pages/Login";
+import { useStoreContext } from "../../../utils/GlobalState";
+import { TOGGLE_MODAL } from "../../../utils/actions";
 import "./Modal.css";
 
-export default function ModalLogin() {
-  const [modal, setModal] = useState(false);
+export default function ModalLogin({ modalIsOn }) {
+    // document.body.classList.add('active-modal')
+    const [state, dispatch] = useStoreContext()
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if(modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
-
+    function toggleModal() {
+      dispatch({ type: TOGGLE_MODAL });
+      document.body.classList.add('active-modal')
+    }
+  
   return (
-    <>
-      <button onClick={toggleModal} className="btn-modal">
-        Open
-      </button>
-
-      {modal && (
+      <Home />
+      {state.modalOpen ? (
         <div className="modal">
-          <div onClick={toggleModal} className="overlay"></div>
+          <div  className="overlay"></div>
           <div className="modal-content">
             <Login />
-            <button className="close-modal" onClick={toggleModal}>
+            <button className="close-modal" >
               CLOSE
             </button>
           </div>
         </div>
-      )}
-     
-    </>
+      ) : (null) }
   );
-}
