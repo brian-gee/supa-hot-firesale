@@ -35,9 +35,9 @@ body.active-modal {
     min-width: 300px;
 }
 
-.close-modal-login {
+.close-login-modal {
     position: absolute;
-    top: 10px;
+    bottom: 16rem;
     right: 10px;
     padding: 5px 7px;
 }
