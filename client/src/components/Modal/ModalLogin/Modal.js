@@ -23,7 +23,7 @@ export default function ModalLogin() {
             <div className="overlay">
               <div className="modal-content">
                 <Login />
-                <button className="close-modal" onClick={toggleModal}>
+                <button className="close-login-modal" onClick={toggleModal}>
                   <Link to="/" onClick={toggleModal}>CLOSE</Link>
                 </button>
               </div>

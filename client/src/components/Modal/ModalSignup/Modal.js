@@ -30,6 +30,9 @@ export default function ModalSignup() {
               </div>
             </div>
           </div>
+          <button className="close-modal">
+                <Link to="/">Close</Link>
+              </button>
         </div>
       )}
     </div>

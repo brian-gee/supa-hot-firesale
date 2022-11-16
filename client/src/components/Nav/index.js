@@ -1,5 +1,6 @@
 import React from "react";
 import Auth from "../../utils/auth";
+import { TOGGLE_MODAL } from "../../utils/actions";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/SHFSW.png"
 function Nav() {
@@ -29,8 +30,8 @@ function Nav() {
               Signup
             </Link>
           </li>
-          <li className="mx-1 nav-li">
-            <Link to="/login">
+          <li className="mx-1">
+            <Link to="/login" onClick={TOGGLE_MODAL}>
               Login
             </Link>
           </li>
