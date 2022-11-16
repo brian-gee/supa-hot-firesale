@@ -2,11 +2,13 @@ import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../../utils/GlobalState';
 import {
+  CLEAR_CATEGORIES,
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+import "./CategoryMenu.css";
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -41,9 +43,19 @@ function CategoryMenu() {
     });
   };
 
+  const clearCategories = () => {
+    dispatch ({
+      type: CLEAR_CATEGORIES,
+      currentCategories: '',
+    });
+  };
+
   return (
     <div>
       <h2>Choose a Category:</h2>
+      <div className='btn'>
+      <button className='clear_btn' onClick={clearCategories}>Clear Categories</button>
+      </div>
       {categories.map((item) => (
         <button
           key={item._id}
