@@ -17,6 +17,8 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
+import ModalLogin from './components/Modal/ModalLogin/Modal';
+import ModalSignUp from './components/Modal/ModalSignup/Modal';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -51,11 +53,11 @@ function App() {
               />
               <Route 
                 path="/login" 
-                element={<Login />} 
+                element={<ModalLogin />} 
               />
               <Route 
                 path="/signup" 
-                element={<Signup />} 
+                element={<ModalSignUp />} 
               />
               <Route 
                 path="/success" 
