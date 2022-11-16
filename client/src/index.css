@@ -214,6 +214,12 @@ input:focus {
 }
 
 
+.cart-empty{
+  width: 20% !important;
+  margin-left: 40%;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .card {

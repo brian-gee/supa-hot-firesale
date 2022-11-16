@@ -7,6 +7,8 @@ import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
+import deadfire from './../../assets/deadbonfre.png'
+import cartfire from './../../assets/cartonfireleft.png'
 import './style.css';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
@@ -64,7 +66,7 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          🛒
+        <img alt="cart" className='cart-icon' src={cartfire}></img>
         </span>
       </div>
     );
@@ -93,12 +95,12 @@ const Cart = () => {
           </div>
         </div>
       ) : (
+        <div>
+          <img alt="whoops" className='cart-empty' src={deadfire}></img>
         <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
           You haven't added anything to your cart yet!
         </h3>
+        </div>
       )}
     </div>
   );
