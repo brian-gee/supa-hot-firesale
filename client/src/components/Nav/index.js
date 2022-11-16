@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import logo from "./../../assets/SHFSW.png"
 function Nav() {
 
   function showNavigation() {
@@ -24,13 +24,13 @@ function Nav() {
     } else {
       return (
         <ul className="flex-row">
-          <li className="mx-1">
+          <li className="mx-1 nav-li">
             <Link to="/signup">
               Signup
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/login">
+            <Link to="/login" onClick={TOGGLE_MODAL}>
               Login
             </Link>
           </li>
@@ -41,12 +41,10 @@ function Nav() {
 
   return (
     <header className="flex-row px-1">
-      <h1>
+              
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
-          -Shop-Shop
+        <img alt="logo" className="logo"src={logo}></img>
         </Link>
-      </h1>
 
       <nav>
         {showNavigation()}

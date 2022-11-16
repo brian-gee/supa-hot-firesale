@@ -35,11 +35,17 @@ body.active-modal {
     min-width: 300px;
 }
 
-.close-modal {
+.close-signupmodal {
     position: absolute;
+<<<<<<< HEAD:client/src/components/Modal/ModalSignup/Modal.css
     top: 20%;
     right: 43%;
+=======
+    bottom: 11rem;
+    right: 10px;
+>>>>>>> 234133f039bda8ebbb094bc3fd9dc4bb8e6365be:client/src/components/Modal/ModalSignup/ModalSignup.css
     padding: 5px 7px;
+
 }
 
 .close-btn{
