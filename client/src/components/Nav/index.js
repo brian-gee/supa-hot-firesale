@@ -1,5 +1,6 @@
 import React from "react";
 import Auth from "../../utils/auth";
+import { TOGGLE_MODAL } from "../../utils/actions";
 import { Link } from "react-router-dom";
 import logo from "./../../assets/SHFSW.png"
 function Nav() {
