@@ -205,6 +205,16 @@ input:focus {
   color: var(--error);
 }
 
+.logo{
+  width: 25%;
+}
+
+.gif{
+  width: 13%;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;

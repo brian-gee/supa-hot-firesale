@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import logo from "./../../assets/SHFSW.png"
 function Nav() {
 
   function showNavigation() {
@@ -42,8 +42,9 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1 className="nav-h1">
+        
         <Link to="/">
-           Supa Hot Firesale
+        <img alt="logo" className="logo"src={logo}></img>
         </Link>
       </h1>
 
