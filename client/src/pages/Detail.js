@@ -107,7 +107,7 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
-          <ReviewForm productId={currentProduct.id} />
+          <ReviewForm productId={currentProduct._id} />
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}

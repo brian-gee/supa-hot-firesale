@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const LOGIN = gql`
   mutation login($email: String!, $password: String!) {
@@ -56,10 +56,9 @@ export const ADD_REVIEW = gql`
       _id
       reviews {
         _id
-        reviewBody
-        first_name
-        last_name
+        email
         createdAt
+        reviewBody
       }
     }
   }
