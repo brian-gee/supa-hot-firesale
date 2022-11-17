@@ -32,6 +32,7 @@ const ReviewForm = ({ productId }) => {
     <div>
       <p className={`${characterCount === 500 || error ? "text-error" : ""}`}>
         Character Count: {characterCount}/500
+        
         {error && <span>Something went wrong...</span>}
       </p>
       <form onSubmit={formSubmit}>
