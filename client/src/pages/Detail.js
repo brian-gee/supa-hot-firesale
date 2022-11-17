@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
+import ReviewForm from '../components/Review';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -106,6 +107,7 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          <ReviewForm productId={currentProduct._id} />
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
