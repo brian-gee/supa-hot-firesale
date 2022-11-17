@@ -77,7 +77,7 @@ const Cart = () => {
     <div className="overlay">
       <div className="cart modal-content">
         <div className="close" onClick={toggleCart}>
-          [close]
+        ❌
         </div>
         <h2>Shopping Cart</h2>
         {state.cart.length ? (
