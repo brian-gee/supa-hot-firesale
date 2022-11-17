@@ -50,7 +50,7 @@
 
   ## Contributors
 
-  brian-gee, dopecello, SebasMelendez, belcross17
+  brian-gee, dopecello, SebasMelendez, ScoBoFoSho, belcross17
 
   ## Test
 
@@ -70,5 +70,7 @@
   - [Github-Profile](https://github.com/SebasMelendez)
   - Brayan Arias
   - [Github-Profile](https://github.com/belcross17)
+  - Francisco Ferre
+  - [Github-Profile](https://github.com/ScoBoFoSho)
 
 
