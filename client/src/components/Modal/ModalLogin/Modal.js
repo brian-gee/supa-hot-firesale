@@ -7,7 +7,6 @@ import { TOGGLE_MODAL } from "../../../utils/actions";
 import "./ModalLogin.css";
 
 export default function ModalLogin() {
-  // document.body.classList.add('active-modal')
   const [state, dispatch] = useStoreContext();
 
   function toggleModal() {
@@ -24,7 +23,9 @@ export default function ModalLogin() {
               <div className="modal-content">
                 <Login />
                 <button className="close-login-modal" onClick={toggleModal}>
-                  <Link to="/" onClick={toggleModal}>CLOSE</Link>
+                  <Link to="/" onClick={toggleModal}>
+                    CLOSE
+                  </Link>
                 </button>
               </div>
             </div>
