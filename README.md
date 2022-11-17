@@ -62,13 +62,9 @@
 
   ## GitHub
 
-  - Brian Geertsma
-  - [Github-Profile](https://github.com/brian-gee)
-  - William Locke
-  - [Github-Profile](https://github.com/dopecello)
-  - Sebastian Melendez
-  - [Github-Profile](https://github.com/SebasMelendez)
-  - Brayan Arias
-  - [Github-Profile](https://github.com/belcross17)
+  - [Brian Geertsma](https://github.com/brian-gee)
+  - [William Locke](https://github.com/dopecello)
+  - [Sebastian Melendez](https://github.com/SebasMelendez)
+  - [Brayan Arias](https://github.com/belcross17)
 
 
